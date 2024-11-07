@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +8,67 @@
   <title>FinurCanarias</title>
 </head>
 <body>
-    <header class="flex items-center justify-between bg-white sticky top-0 z-30">
-        <div class="flex items-center space-x-1 ml-20">
+    <header class="flex items-center justify-between bg-white sticky top-0 z-30 px-4 md:px-8">
+        <!-- Icono de menú para responsive -->
+        <div class="md:hidden flex ml-3">
+            <button id="menu-toggle" class="text-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>                  
+            </button>
+        </div>
+        <div class="flex items-center space-x-2 ml-2">
             <a href="index.html">
-                <img src="imgs/FinurSinFondo.png" alt="Logo" class="w-20 h-20">
+                <img src="imgs/FinurSinFondo.png" alt="Logo" class="w-16 h-16 sm:w-20 sm:h-20">
             </a>
             <a href="index.html">
-                <span class="text-2xl font-semibold">FINURCANARIAS</span>
+                <span class="text-xl sm:text-2xl font-semibold">FINURCANARIAS</span>
             </a>
         </div>
-        <nav class="space-x-9 mr-24">
+        <nav class="hidden md:flex space-x-9 mr-6">
             <a href="index.html" class="text-finur-400 text-lg border-b-2 border-transparent hover:border-finur-600 transition-all duration-300 ease-in-out">Inicio</a>
-            <a href="servicios.html" class="hover:text-gray-500 text-lg border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Servicios</a>
-            <a href="contacto.html" class="hover:text-gray-500 text-lg border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Contacto</a>
+            <a href="servicios.html" class="text-lg border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Servicios</a>
+            <a href="contacto.html" class="text-lg border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Contacto</a>
         </nav>
     </header>
+
     <!-- IMPORTANTE: recordar poner una imagen de fondo al main -->
     <main class="relative h-[calc(100vh-68px)] bg-cover bg-center" style="background-image: url('');">
         <div class="absolute inset-0 bg-black bg-opacity-40">
             <div class="relative z-10 flex items-center justify-center h-full text-center text-white px-6">
                 <div>
-                    <h1 class="text-7xl text-black font-bold mb-4 cursor-default">FINURCANARIAS</h1>
-                    <h3 class="text-lg font-bold cursor-default">ADMINISTRACIÓN Y GESTIÓN DE FINCAS</h3>
-                    <h3 class="text-lg font-bold mb-6 cursor-default">TU BIENESTAR, NUESTRO OBJETIVO</h3>
+                    <h1 class="text-4xl sm:text-7xl text-black font-bold mb-4 cursor-default">FINURCANARIAS</h1>
+                    <h3 class="text-lg sm:text-xl font-bold cursor-default">ADMINISTRACIÓN Y GESTIÓN DE FINCAS</h3>
+                    <h3 class="text-lg sm:text-xl font-bold mb-6 cursor-default">TU BIENESTAR, NUESTRO OBJETIVO</h3>
 
-                    <a href="#información" class="inline-block bg-finur-500 text-black py-4 px-20 rounded-lg font-bold hover:bg-finur-400 transition duration-300">LEER MÁS</a>
+                    <a href="#información" class="inline-block bg-finur-500 text-white py-4 px-12 sm:px-20 rounded-lg font-bold hover:bg-finur-400 transition duration-300">LEER MÁS</a>
                 </div>
             </div>
         </div>
     </main>
-    <section class="py-16 px-8 bg-gray-100">
-        <h2 class="text-3xl font-semibold mb-4">Más Información</h2>
-        <p>Aquí puedes poner el contenido adicional que se mostrará después de hacer clic en "Leer más".</p>
+
+    <section class="py-16 bg-gray-100 text-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="flex flex-col justify-center space-y-6">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-gray-900">Sobre nosotros</h2>
+                    <p class="text-lg sm:text-xl text-gray-700 text-justify opacity-80">Nos especializamos en la administración de comunidades y complejos inmobiliarios, ofreciendo un servicio integral y personalizado. Para ello, contamos con una estructura interna multidisciplinar, formada por profesionales en diferentes ámbitos, lo que nos permite ofrecer las soluciones que nuestros clientes esperan.</p>
+                    <p class="text-lg sm:text-xl text-gray-700 text-justify opacity-80">Nuestro objetivo es mantener los edificios en las mejores condiciones de seguridad, funcionalidad y habitabilidad. Cada requisito, detalle o circunstancia es atendido siempre con el mejor trato, garantizando que todo funcione de la mejor manera posible, contribuyendo con ello a una mejor calidad de vida de sus usuarios y residentes.</p>
+                    <a href="#!" class="inline-block bg-[#6eb139] text-white py-3 px-6 rounded-xl text-lg font-semibold transition-all hover:bg-[#508828] hover:scale-105">Saber más</a>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <img src="imgs/CasasCanarias.jpg" alt="Imagen" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
     </section>
+
     <footer class="grid">
-        <div class="flex items-center justify-between bg-gray-300 py-8">
-            <!-- Primer div: Contacto -->
-            <div class="flex flex-col items-start space-y-6 flex-1 ml-20">
-                <h3 class="text-center text-lg font-semibold">CONTACTE CON NOSOTROS</h3>
+        <div class="flex flex-col md:flex-row items-center justify-between py-8 bg-gray-300">
+            <!-- CONTACTO -->
+            <div class="flex flex-col items-start space-y-6 flex-1 mx-6 md:mx-20 md:w-1/3">
+                <h3 class="text-lg font-semibold">CONTACTE CON NOSOTROS</h3>
                 <div class="flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -65,21 +88,22 @@
                     <span><b>WhatsApp:</b> +34 640 92 59 60</span>
                 </div>
             </div>
-        
-            <!-- Segundo div: Acceso despacho -->
-            <!-- IMPORTANTE: recordar poner el enlace al despacho -->
-            <div class="flex items-center justify-center flex-1 mx-80">
-                <a href="" class="text-center text-lg font-semibold">ACCESO AL DESPACHO 24 HORAS</a>
+    
+            <!-- ENLACE AL DESPACHO -->
+            <div class="flex items-center justify-center flex-1 my-6 mx-6 md:mx-0 md:my-0">
+                <a href="#" class="text-lg font-semibold">ACCESO AL DESPACHO 24 HORAS</a>
             </div>
-        
-            <!-- Tercer div: Perfil -->
-            <div class="flex flex-col items-start space-y-2 flex-1 mr-20">
+    
+            <!-- PERFIL -->
+            <div class="flex flex-col items-start space-y-2 flex-1 mx-6 md:mx-20 md:w-1/3">
                 <h3 class="text-lg font-semibold">PERFIL</h3>
                 <p class="text-justify">Somos una administración que trabaja para su bienestar, dando un trato personalizado a nuestros clientes.</p>
             </div>
         </div>
+    
+        <!-- COPYRIGHT -->
         <div class="flex items-center justify-center bg-slate-500 p-1">
-            <p class="text-white">Copyright @ 2024 Finur Canarias. Todos los derechos reservados.</p>
+            <p class="text-white text-sm">Copyright @ 2024 Finur Canarias. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
