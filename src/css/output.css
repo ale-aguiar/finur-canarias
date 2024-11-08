@@ -790,10 +790,6 @@ video {
   align-items: flex-start;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -1330,6 +1326,10 @@ video {
 
   .max-lg\:text-center {
     text-align: center;
+  }
+
+  .max-lg\:text-justify {
+    text-align: justify;
   }
 }
 
