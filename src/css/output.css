@@ -1327,10 +1327,6 @@ video {
   .max-lg\:text-center {
     text-align: center;
   }
-
-  .max-lg\:text-justify {
-    text-align: justify;
-  }
 }
 
 @media (min-width: 640px) {
