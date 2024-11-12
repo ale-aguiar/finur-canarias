@@ -1488,6 +1488,18 @@ video {
     border-bottom-right-radius: 2rem;
   }
 
+  .lg\:rounded-bl-\[2rem\] {
+    border-bottom-left-radius: 2rem;
+  }
+
+  .lg\:rounded-tl-\[2rem\] {
+    border-top-left-radius: 2rem;
+  }
+
+  .lg\:rounded-tr-\[2rem\] {
+    border-top-right-radius: 2rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
