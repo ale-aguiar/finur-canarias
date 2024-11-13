@@ -77,9 +77,9 @@
                         <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Sabemos lo importante que es para las comunidades tener un buen control de los ingresos y gastos. Por eso, nos esforzamos por hacer las gestiones de la mejor forma posible, contribuyendo así al ahorro y a un menor coste para el propietario.</p>
                         <br>
                         <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Contamos con los siguientes servicios:</p>
-                        <ul class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default list-inside pl-4">
-                          <li class="list-disc">Gestión de pagos e ingresos</li>
-                          <li class="list-disc">Planificación fiscal de impuestos</li>
+                        <ul class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default pl-4 list-disc ml-2">
+                          <li>Gestión de pagos e ingresos</li>
+                          <li>Planificación fiscal de impuestos</li>
                         </ul>
                       </div>
                       <form method="dialog" class="modal-backdrop">
@@ -102,8 +102,30 @@
                 <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
                 <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                   <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                    <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center cursor-default">Administración</p>
-                    <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center cursor-default">Por establecer</p>
+                    <p class="mt-2 text-4xl font-medium tracking-tight text-gray-950 text-center cursor-default">Administración</p>
+                    <!-- modal con info -->
+                    <div class="flex justify-center py-4">
+                      <button class="btn bg-finur-500 hover:bg-finur-600 text-white" onclick="modal_administracion.showModal()">Saber más</button>
+                      <dialog id="modal_administracion" class="modal">
+                        <div class="modal-box">
+                          <form method="dialog">
+                            <button class="btn btn-md btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                          </form>
+                          <h3 class="text-2xl font-bold cursor-default">Administración</h3>
+                          <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Por establecer</p>
+                          <br>
+                          <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Contamos con los siguientes servicios:</p>
+                          <ul class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default pl-4 list-disc ml-2">
+                            <li>Por establecer</li>
+                            <li>Por establecer</li>
+                          </ul>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                          <button></button>
+                        </form>
+                      </dialog>
+                    </div>
+                    <!-- Fin de modal con info -->
                   </div>
                 </div>
                 <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
@@ -114,8 +136,31 @@
                 <div class="absolute inset-px rounded-lg bg-white"></div>
                 <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                   <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                    <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center cursor-default">Gestión de morosidad</p>
-                    <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center cursor-default">Por establecer</p>
+                    <p class="mt-2 text-4xl font-medium tracking-tight text-gray-950 text-center cursor-default">Gestión de morosidad</p>
+                    <!-- modal con info -->
+                    <div class="flex justify-center py-4">
+                      <button class="btn bg-finur-500 hover:bg-finur-600 text-white" onclick="modal_morosidad.showModal()">Saber más</button>
+                      <dialog id="modal_morosidad" class="modal">
+                        <div class="modal-box">
+                          <form method="dialog">
+                            <button class="btn btn-md btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                          </form>
+                          <h3 class="text-2xl font-bold cursor-default">Gestión de morosidad</h3>
+                          <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Por establecer</p>
+                          <br>
+                          <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Contamos con los siguientes servicios:</p>
+                          <ul class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default pl-4 list-disc ml-2">
+                            <li>Envío de notificación de deudas a propietarios</li>
+                            <li>Requerimiento previo de pago a dichos propietarios</li>
+                            <li>Reclamación vía judicial</li>
+                          </ul>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                          <button></button>
+                        </form>
+                      </dialog>
+                    </div>
+                    <!-- Fin de modal con info -->
                   </div>
                 </div>
                 <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
@@ -126,8 +171,33 @@
                 <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-tr-[2rem]"></div>
                 <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
                   <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                    <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center cursor-default">Mantenimiento y conservación</p>
-                    <p class="mt-2 max-w-lg text-sm/6 text-gray-600 text-justify max-lg:text-center cursor-default">La construcción de edificios concentra el mayor consumo de recursos del planeta. Por eso, es necesario un mejor control de la eficiencia energética, así como de la conservación de su estructura, instalaciones, fachadas, cubierta, y siempre teniendo en cuenta una buena adecuación de accesibilidad.</p>
+                    <p class="mt-2 text-4xl font-medium tracking-tight text-gray-950 text-center cursor-default">Mantenimiento</p>
+                    <!-- modal con info -->
+                    <div class="flex justify-center py-4">
+                      <button class="btn bg-finur-500 hover:bg-finur-600 text-white" onclick="modal_mantenimiento.showModal()">Saber más</button>
+                      <dialog id="modal_mantenimiento" class="modal">
+                        <div class="modal-box">
+                          <form method="dialog">
+                            <button class="btn btn-md btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                          </form>
+                          <h3 class="text-2xl font-bold cursor-default">Mantenimiento</h3>
+                          <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">La construcción de edificios concentra el mayor consumo de recursos del planeta. Por eso, es necesario un mejor control de la eficiencia energética, así como de la conservación de su estructura, instalaciones, fachadas, cubierta, y siempre teniendo en cuenta una buena adecuación de accesibilidad.</p>
+                          <br>
+                          <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Contamos con los siguientes servicios:</p>
+                          <ul class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default pl-4 list-disc ml-2">
+                            <li>Control y optimización energética de las instalaciones</li>
+                            <li>Control del estado de la estructura, fachadas y cubierta del edificio</li>
+                            <li>Control de las inspecciones obligatorias (OCA)</li>
+                            <li>Solicitud de presupuesto de obras y servicios</li>
+                            <li>Control y vigilancia de los proyectos y obras a realizar</li>
+                          </ul>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                          <button></button>
+                        </form>
+                      </dialog>
+                    </div>
+                    <!-- Fin de modal con info -->
                   </div>
                   <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                     <img src="imgs/Mantenimiento.png" alt="Mantenimiento">
@@ -141,8 +211,32 @@
                   <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-bl-[2rem]"></div>
                   <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-r-[calc(2rem+1px)]">
                     <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center cursor-default">Servicios jurídicos</p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center text-justify cursor-default">El entorno en el que hoy en día se mueve la comunidad de propietarios cada vez se hace más complejo, ya que no solo se rige por la Ley de Propiedad Horizontal, sino que también entran en juego una serie de legislaciones referentes al uso y mantenimiento del edificio, siendo todavía más necesario el asesoramiento jurídico.</p>
+                      <p class="mt-2 text-4xl font-medium tracking-tight text-gray-950 text-center cursor-default">Servicios jurídicos</p>
+                      <!-- modal con info -->
+                      <div class="flex justify-center py-4">
+                        <button class="btn bg-finur-500 hover:bg-finur-600 text-white" onclick="modal_juridico.showModal()">Saber más</button>
+                        <dialog id="modal_juridico" class="modal">
+                          <div class="modal-box">
+                            <form method="dialog">
+                              <button class="btn btn-md btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <h3 class="text-2xl font-bold cursor-default">Servicios jurídicos</h3>
+                            <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">El entorno en el que hoy en día se mueve la comunidad de propietarios cada vez se hace más complejo, ya que no solo se rige por la Ley de Propiedad Horizontal, sino que también entran en juego una serie de legislaciones referentes al uso y mantenimiento del edificio, siendo todavía más necesario el asesoramiento jurídico.</p>
+                            <br>
+                            <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Contamos con los siguientes servicios:</p>
+                            <ul class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default pl-4 list-disc ml-2">
+                              <li>Asesoramiento sobre la Ley de Ordenación de la Edificación y el Código Técnico de la Edificación (CTE)</li>
+                              <li>Asesoramiento sobre la Ley de Infraestructuras Comunes para el Acceso a los Servicios de Telecomunicación</li>
+                              <li>Asesoramiento sobre la Ley de Accesibilidad para Personas con Movilidad Reducida (PMR)</li>
+                              <li>Asesoramiento sobre ordenanzas municipales: animales, ruidos, urbanismo...</li>
+                            </ul>
+                          </div>
+                          <form method="dialog" class="modal-backdrop">
+                            <button></button>
+                          </form>
+                        </dialog>
+                      </div>
+                      <!-- Fin de modal con info -->
                     </div>
                     <div class="relative min-h-[30rem] w-full grow">
                       <div class="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
@@ -163,8 +257,45 @@
                   <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]"></div>
                   <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-br-[2rem]">
                     <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                      <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center cursor-default">Asesoramiento inmobiliario</p>
-                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center text-justify cursor-default">La compra, venta o alquiler de una vivienda requiere una gran cantidad de tiempo, recursos y esfuerzos. Por esta razón, ofrecemos servicios inmobiliarios a nuestros clientes, que incluyen desde asesoramiento inmobiliario en alquileres hasta tasaciones de propiedades.</p>
+                      <p class="mt-2 text-4xl font-medium tracking-tight text-gray-950 text-center cursor-default">Asesoramiento inmobiliario</p>
+                      <!-- modal con info -->
+                      <div class="flex justify-center py-4">
+                        <button class="btn bg-finur-500 hover:bg-finur-600 text-white" onclick="modal_inmobiliario.showModal()">Saber más</button>
+                        <dialog id="modal_inmobiliario" class="modal">
+                          <div class="modal-box">
+                            <form method="dialog">
+                              <button class="btn btn-md btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <h3 class="text-2xl font-bold cursor-default">Asesoramiento inmobiliario</h3>
+                            <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">La compra, venta o alquiler de una vivienda requiere una gran cantidad de tiempo, recursos y esfuerzos. Por esta razón, ofrecemos servicios inmobiliarios a nuestros clientes, que incluyen desde asesoramiento inmobiliario en alquileres hasta tasaciones de propiedades.</p>
+                            <br>
+                            <p class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default">Contamos con los siguientes servicios:</p>
+                            <ul class="mt-2 max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default pl-4 ml-2">
+                              <li><b>Alquileres</b></li>
+                              <ul class="max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default pl-4 list-disc ml-2">
+                                <li>Gestión de patrimonio</li>
+                                <li>Estudios de solvencia económica del inquilino</li>
+                                <li>Redacción de contratos de alquiler de viviendas y locales</li>
+                                <li>Asesoramiento en la Ley de Arrendamientos Urbanos (LAU)</li>
+                                <li>Gestión de deudas de inquilinos</li>
+                                <li>Seguros de arrendamiento</li>
+                              </ul>
+                              <li class="mt-2"><b>Tasaciones inmobiliarias</b></li>
+                              <ul class="max-w-lg text-lg text-gray-600 text-justify max-lg:text-center cursor-default pl-4 list-disc ml-2">
+                                <li>Valoración de naves, oficinas y garajes</li>
+                                <li>Valoración de inmuebles y locales</li>
+                                <li>Valoración de fincas rústicas</li>
+                                <li>Valoración de solares</li>
+                              </ul>
+                            </ul>
+                          </div>
+                          <form method="dialog" class="modal-backdrop">
+                            <button></button>
+                          </form>
+                        </dialog>
+                      </div>
+                      <!-- Fin de modal con info -->
+                      <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center text-justify cursor-default"></p>
                     </div>
                     <div class="relative min-h-[30rem] w-full grow">
                       <div class="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
