@@ -32,11 +32,30 @@
         </nav>
     </header>
 
-    <section class="text-gray-600 body-font relative flex justify-center">
+    <section class="text-gray-600 body-font relative flex justify-center cursor-default">
         <div class="container px-5 pt-24 py-8 mx-auto flex sm:flex-nowrap flex-wrap">
           <div class="lg:w-3/4 md:w-2/3 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-            <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=FINURCANARIAS%20ADMINISTRACI%C3%93N%20DE%20FINCAS%2C%20Cl.%20del%20Dr.%20Rafael%20Garc%C3%ADa%20Perez%2C%20N%2010%2C%20Local%20B-%202%2C%2035014%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: contrast(1.2) opacity(0.9);"></iframe>
+            <div id="loading-logo" class="absolute inset-0 flex justify-center items-center z-10 opacity-100 transition-opacity duration-500 ease-in-out">
+                <img src="imgs/FinurSinFondo.png" class="w-32 h-32">
+            </div>
+            
+            <iframe id="map" width="100%" height="100%" class="absolute inset-0 hidden" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=FINURCANARIAS%20ADMINISTRACI%C3%93N%20DE%20FINCAS%2C%20Cl.%20del%20Dr.%20Rafael%20Garc%C3%ADa%20Perez%2C%20N%2010%2C%20Local%20B-%202%2C%2035014%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: contrast(1.2) opacity(0.9);"></iframe>
           </div>
+            
+          <script>
+            document.getElementById('map').onload = function() {
+              const logo = document.getElementById('loading-logo');
+              const map = document.getElementById('map');
+              
+              logo.style.opacity = '0';
+              
+              setTimeout(() => {
+                logo.style.display = 'none';
+                map.classList.remove('hidden');
+                map.style.opacity = '1';
+              }, 500);
+            };
+          </script>
           <div class="lg:w-1/4 md:w-1/3 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 space-y-6">
             <h2 class="text-gray-900 text-3xl mb-1 font-medium title-font">Datos de contacto</h2>
             <div class="flex items-center space-x-2">
@@ -93,7 +112,7 @@
     <footer class="grid">
         <div class="flex flex-col md:flex-row items-center justify-between py-8 bg-gray-300">
             <!-- CONTACTO -->
-            <div class="flex flex-col items-start space-y-6 flex-1 mx-6 md:mx-20 md:w-1/3">
+            <div class="flex flex-col items-start space-y-6 flex-1 mx-6 md:mx-20 md:w-1/3 cursor-default">
                 <h3 class="text-lg font-semibold cursor-default">CONTACTE CON NOSOTROS</h3>
                 <div class="flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
