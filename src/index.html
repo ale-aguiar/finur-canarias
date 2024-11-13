@@ -11,20 +11,34 @@
 </head>
 <body>
     <header class="flex items-center justify-between bg-white sticky top-0 z-30 px-4 md:px-8 shadow-lg">
-        <!-- Icono de menú para responsive -->
-        <div class="md:hidden flex ml-3">
-            <button id="menu-toggle" class="text-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>                  
-            </button>
+        <!-- nav-responsive -->
+         <div class="lg:hidden">
+            <div class="drawer">
+                <input id="nav-responsive" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                <label for="nav-responsive">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </label>
+                </div>
+                <div class="drawer-side">
+                    <label for="nav-responsive" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul class="menu bg-base-100 text-base-content min-h-full w-60 p-6">
+                        <li><a href="index.html" class="text-finur-400 text-xl">Inicio</a></li>
+                        <li><a href="servicios.html" class="text-xl">Servicios</a></li>
+                        <li><a href="contacto.html" class="text-xl">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="flex items-center space-x-2 ml-2">
+        <!-- Fin de nav-responsive-->
+        <div class="flex items-center lg:space-x-2 ml-2">
             <a href="index.html">
                 <img src="imgs/FinurSinFondo.png" alt="Logo" class="w-16 h-16 sm:w-20 sm:h-20">
             </a>
             <a href="index.html">
-                <span class="text-black dark:text-white text-xl sm:text-2xl font-semibold">FINURCANARIAS</span>
+                <span class="text-black dark:text-white text-xl font-semibold">FINURCANARIAS</span>
             </a>
         </div>
         <nav class="hidden md:flex space-x-9 mr-6">
