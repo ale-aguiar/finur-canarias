@@ -8,14 +8,14 @@
   <title>Contacto | FinurCanarias</title>
 </head>
 <body>
-    <header class="flex items-center justify-between bg-white sticky top-0 z-30 px-4 md:px-8 shadow-lg">
+    <header class="flex items-center justify-between bg-white dark:bg-gray-800 sticky top-0 z-30 px-4 md:px-8 shadow-lg">
         <!-- nav-responsive -->
          <div class="lg:hidden">
             <div class="drawer">
                 <input id="nav-responsive" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
                 <label for="nav-responsive">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8 dark:stroke-white">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                 </label>
@@ -40,13 +40,13 @@
                 <img src="imgs/Finur.png" alt="Logo" class="w-16 h-16 sm:w-20 sm:h-20">
             </a>
             <a href="index.html">
-                <span class="text-black dark:text-white text-xl font-semibold">FINURCANARIAS</span>
+                <span class="text-black dark:text-white text-2xl font-semibold">FINURCANARIAS</span>
             </a>
         </div>
-        <nav class="hidden md:flex space-x-9 mr-6">
-            <a href="index.html" class="text-lg border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Inicio</a>
-            <a href="servicios.html" class="text-lg border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Servicios</a>
-            <a href="contacto.html" class="text-finur-400 text-lg border-b-2 border-transparent hover:border-finur-600 transition-all duration-300 ease-in-out">Contacto</a>
+        <nav class="hidden md:flex space-x-9 mr-6 text-xl">
+            <a href="index.html" class="border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Inicio</a>
+            <a href="servicios.html" class="border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Servicios</a>
+            <a href="contacto.html" class="text-finur-400 border-b-2 border-transparent hover:border-finur-600 transition-all duration-300 ease-in-out">Contacto</a>
         </nav>
     </header>
 
@@ -128,11 +128,11 @@
     </div>
 
 
-    <footer class="grid">
-        <div class="flex flex-col md:flex-row items-center justify-between py-8 bg-gray-300">
+    <footer class="grid cursor-default">
+        <div class="flex flex-col md:flex-row items-center justify-between py-8 bg-gray-300 dark:bg-gray-800 dark:text-gray-50">
             <!-- CONTACTO -->
-            <div class="flex flex-col items-start space-y-6 flex-1 mx-6 md:mx-20 md:w-1/3 cursor-default">
-                <h3 class="text-lg font-semibold cursor-default">CONTACTE CON NOSOTROS</h3>
+            <div class="flex flex-col items-start space-y-6 flex-1 mx-6 md:mx-20 md:w-1/3">
+                <h3 class="text-lg font-semibold">CONTACTE CON NOSOTROS</h3>
                 <div class="flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -167,7 +167,7 @@
     
         <!-- COPYRIGHT -->
         <div class="flex items-center justify-center bg-slate-500 p-1">
-            <p class="text-white text-sm cursor-default">Copyright @ 2024 Finur Canarias. Todos los derechos reservados.</p>
+            <p class="text-white text-sm">Copyright @ 2024 Finur Canarias. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
