@@ -1884,6 +1884,16 @@ html:has(.drawer-toggle:checked) {
   right: 2.5rem;
 }
 
+.inset-x-5 {
+  left: 1.25rem;
+  right: 1.25rem;
+}
+
+.inset-x-4 {
+  left: 1rem;
+  right: 1rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1910,6 +1920,14 @@ html:has(.drawer-toggle:checked) {
 
 .right-0 {
   right: 0px;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-16 {
+  top: 4rem;
 }
 
 .z-10 {
@@ -2028,6 +2046,14 @@ html:has(.drawer-toggle:checked) {
 
 .min-h-full {
   min-height: 100%;
+}
+
+.min-h-\[20rem\] {
+  min-height: 20rem;
+}
+
+.min-h-\[10rem\] {
+  min-height: 10rem;
 }
 
 .w-16 {
@@ -2700,6 +2726,22 @@ html:has(.drawer-toggle:checked) {
 }
 
 @media (min-width: 768px) {
+  .md\:top-5 {
+    top: 1.25rem;
+  }
+
+  .md\:top-1 {
+    top: 0.25rem;
+  }
+
+  .md\:top-11 {
+    top: 2.75rem;
+  }
+
+  .md\:top-20 {
+    top: 5rem;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
