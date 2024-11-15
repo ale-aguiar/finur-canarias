@@ -1893,6 +1893,10 @@ html:has(.drawer-toggle:checked) {
   bottom: 0px;
 }
 
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -2179,6 +2183,11 @@ html:has(.drawer-toggle:checked) {
   border-radius: 0.75rem;
 }
 
+.rounded-b-\[12cqw\] {
+  border-bottom-right-radius: 12cqw;
+  border-bottom-left-radius: 12cqw;
+}
+
 .rounded-t-\[12cqw\] {
   border-top-left-radius: 12cqw;
   border-top-right-radius: 12cqw;
@@ -2191,6 +2200,10 @@ html:has(.drawer-toggle:checked) {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-b-\[3cqw\] {
+  border-bottom-width: 3cqw;
 }
 
 .border-t-\[3cqw\] {
