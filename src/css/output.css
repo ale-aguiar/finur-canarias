@@ -2490,16 +2490,6 @@ html:has(.drawer-toggle:checked) {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-finur-50 {
-  --tw-text-opacity: 1;
-  color: rgb(243 250 235 / var(--tw-text-opacity));
-}
-
-.text-finur-900 {
-  --tw-text-opacity: 1;
-  color: rgb(46 72 31 / var(--tw-text-opacity));
-}
-
 .opacity-100 {
   opacity: 1;
 }
@@ -2780,19 +2770,6 @@ html:has(.drawer-toggle:checked) {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .md\:text-center {
-    text-align: center;
-  }
-
-  .md\:text-justify {
-    text-align: justify;
-  }
-
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 }
 
