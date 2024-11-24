@@ -2425,6 +2425,11 @@ html:has(.drawer-toggle:checked) {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2483,6 +2488,16 @@ html:has(.drawer-toggle:checked) {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-finur-50 {
+  --tw-text-opacity: 1;
+  color: rgb(243 250 235 / var(--tw-text-opacity));
+}
+
+.text-finur-900 {
+  --tw-text-opacity: 1;
+  color: rgb(46 72 31 / var(--tw-text-opacity));
 }
 
 .opacity-100 {
@@ -2766,6 +2781,19 @@ html:has(.drawer-toggle:checked) {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-justify {
+    text-align: justify;
+  }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2864,6 +2892,10 @@ html:has(.drawer-toggle:checked) {
 
   .lg\:pb-2 {
     padding-bottom: 0.5rem;
+  }
+
+  .lg\:text-justify {
+    text-align: justify;
   }
 }
 
