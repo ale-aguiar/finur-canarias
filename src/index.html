@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Finur Canarias ofrece servicios de administración y gestión de fincas con un trato personalizado y profesional.">
   <meta name="keywords" content="administración, gestión de fincas, Canarias, servicios inmobiliarios, comunidades">
+  <meta property="og:title" content="FinurCanarias - Administración de fincas">
+  <meta property="og:description" content="Ofrecemos administración y gestión profesional de fincas en Canarias.">
+  <!-- Cambiar al dominio de Finur el og:image y el og:url cuando se vaya a subir la página -->
+  <meta property="og:image" content="https://ale-aguiar.github.io/finur-canarias/src/imgs/CasasCanarias.jpg">
+  <meta property="og:url" content="https://ale-aguiar.github.io/finur-canarias/src/index.html">
+  <meta name="robots" content="index, follow">
   <link rel="icon" type="img/x-icon" href="imgs/Finur.ico">
   <link rel="stylesheet" href="css/output.css">
   <title>FinurCanarias</title>
@@ -17,7 +23,7 @@
                 <input id="nav-responsive" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
                     <label for="nav-responsive">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8 dark:stroke-white">
+                        <svg aria-label="Icono de menú" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8 dark:stroke-white">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </label>
@@ -26,13 +32,13 @@
                     <label for="nav-responsive" aria-label="close sidebar" class="drawer-overlay"></label>
                     <ul class="menu bg-base-100 text-base-content min-h-full w-60 p-6 space-y-3">
                         <label for="nav-responsive" aria-label="close sidebar">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <svg aria-label="Icono para cerrar menú" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                             </svg>
                         </label>
-                        <li><a href="index.html" class="text-finur-400 text-2xl">Inicio</a></li>
-                        <li><a href="servicios.html" class="text-2xl">Servicios</a></li>
-                        <li><a href="contacto.html" class="text-2xl">Contacto</a></li>
+                        <li><a href="index.html" role="link" class="text-finur-400 text-2xl">Inicio</a></li>
+                        <li><a href="servicios.html" role="link" class="text-2xl">Servicios</a></li>
+                        <li><a href="contacto.html" role="link" class="text-2xl">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,16 +46,16 @@
         <!-- Fin de nav-responsive-->
         <div class="flex items-center lg:space-x-2 ml-2">
             <a href="index.html">
-                <img src="imgs/Finur.png" alt="Logo" class="w-16 h-16 sm:w-20 sm:h-20">
+                <img src="imgs/Finur.png" alt="Logo de FinurCanarias" class="w-16 h-16 sm:w-20 sm:h-20">
             </a>
             <a href="index.html">
                 <span class="text-black dark:text-white text-2xl font-semibold">FINURCANARIAS</span>
             </a>
         </div>
         <nav class="hidden md:flex space-x-9 mr-6 text-xl">
-            <a href="index.html" class="text-finur-400 border-b-2 border-transparent hover:border-finur-600 transition-all duration-300 ease-in-out">Inicio</a>
-            <a href="servicios.html" class="border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Servicios</a>
-            <a href="contacto.html" class="border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Contacto</a>
+            <a href="index.html" role="link" class="text-finur-400 border-b-2 border-transparent hover:border-finur-600 transition-all duration-300 ease-in-out">Inicio</a>
+            <a href="servicios.html" role="link" class="border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Servicios</a>
+            <a href="contacto.html" role="link" class="border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Contacto</a>
         </nav>
     </header>
 
@@ -73,7 +79,7 @@
                     <h2 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-300 font-semibold">Sobre nosotros</h2>
                     <p class="text-lg sm:text-xl lg:text-justify opacity-80">Nos especializamos en la administración de comunidades y complejos inmobiliarios, ofreciendo un servicio integral y personalizado. Para ello, contamos con una estructura interna multidisciplinar, formada por profesionales en diferentes ámbitos, lo que nos permite ofrecer las soluciones que nuestros clientes esperan.</p>
                     <p class="text-lg sm:text-xl lg:text-justify opacity-80">Nuestro objetivo es mantener los edificios en las mejores condiciones de seguridad, funcionalidad y habitabilidad. Cada requisito, detalle o circunstancia es atendido siempre con el mejor trato, garantizando que todo funcione de la mejor manera posible, contribuyendo con ello a una mejor calidad de vida de sus usuarios y residentes.</p>
-                    <a href="servicios.html" class="inline-block bg-finur-500 text-white py-3 px-6 rounded-xl text-lg font-semibold hover:bg-finur-600 transition duration-300 hover:scale-105">Saber más</a>
+                    <a href="servicios.html" role="link" class="inline-block bg-finur-500 text-white py-3 px-6 rounded-xl text-lg font-semibold hover:bg-finur-600 transition duration-300 hover:scale-105">Saber más</a>
                 </div>
 
                 <div class="flex justify-center items-center">
@@ -89,19 +95,19 @@
             <div class="flex flex-col items-center lg:items-start space-y-6 flex-1 mx-6 md:mx-20 md:w-1/3">
                 <h3 class="text-lg font-semibold">CONTACTE CON NOSOTROS</h3>
                 <div class="flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
+                    <svg aria-label="Icono de correo electrónico" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>  
                     <span><b>Email:</b> finur@finurcanarias.com</span>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
+                    <svg aria-label="Icono de teléfono fijo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                     </svg>
                     <span><b>Teléfono fijo:</b> +34 928 12 96 94</span>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
+                    <svg aria-label="Icono de teléfono móvil" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6eb139" class="size-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                     </svg>
                     <span><b>WhatsApp:</b> +34 640 92 59 60</span>
@@ -110,7 +116,7 @@
     
             <!-- ENLACE AL DESPACHO -->
             <div class="flex justify-center flex-1 mt-8 mx-6 md:mx-0 md:my-0">
-                <a href="#" class="text-lg font-semibold">ACCESO AL DESPACHO 24 HORAS</a>
+                <a href="#" role="link" class="text-lg font-semibold">ACCESO AL DESPACHO 24 HORAS</a>
             </div>
     
             <!-- PERFIL -->
