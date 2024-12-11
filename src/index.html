@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="css/output.css">
   <title>FinurCanarias</title>
 </head>
-<body>
+<body class="cursor-default">
     <header class="flex items-center justify-between bg-white dark:bg-gray-800 sticky top-0 z-30 px-4 md:px-8 shadow-lg">
         <!-- nav-responsive -->
          <div class="lg:hidden">
             <div class="drawer">
                 <input id="nav-responsive" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
-                <label for="nav-responsive">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8 dark:stroke-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </label>
+                    <label for="nav-responsive">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8 dark:stroke-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </label>
                 </div>
                 <div class="drawer-side">
                     <label for="nav-responsive" aria-label="close sidebar" class="drawer-overlay"></label>
@@ -53,14 +53,14 @@
         </nav>
     </header>
 
-    <main class="relative h-[calc(100vh-68px)] bg-cover bg-center" style="background-image: url('');">
-        <div class="absolute inset-0 bg-black bg-opacity-20">
-            <div class="relative z-10 flex items-center justify-center h-full text-center text-white px-6">
+    <main class="relative h-[calc(100vh-68px)] bg-cover bg-center" style="background-image: url('imgs/Canarias.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-10">
+            <div class="relative z-10 flex items-center justify-center h-full text-center text-white">
                 <div>
-                    <h1 class="text-4xl lg:text-7xl text-black font-bold mb-3 cursor-default">FINURCANARIAS</h1>
-                    <h3 class="text-md lg:text-xl font-bold cursor-default">ADMINISTRACIÓN Y GESTIÓN DE FINCAS</h3>
-                    <h3 class="text-md lg:text-xl font-bold mb-6 cursor-default">TU BIENESTAR, NUESTRO OBJETIVO</h3>
-                    <a href="#info" class="inline-block bg-finur-500 text-white py-4 px-12 sm:px-20 rounded-lg font-bold hover:bg-finur-600 transition duration-700">LEER MÁS</a>
+                    <h1 class="text-4xl lg:text-7xl text-black font-bold mb-2">FINURCANARIAS</h1>
+                    <h3 class="text-lg lg:text-2xl font-bold">Administración y gestión de fincas</h3>
+                    <h3 class="text-lg lg:text-2xl font-bold mb-6">Tu bienestar, nuestro objetivo</h3>
+                    <a href="#info" class="text-md lg:text-lg inline-block bg-finur-500 text-white py-4 px-12 sm:px-20 rounded-lg font-bold hover:bg-finur-600 transition duration-700">Leer más</a>
                 </div>
             </div>
         </div>
@@ -70,9 +70,9 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div class="flex flex-col justify-center space-y-6">
-                    <h2 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-300 font-semibold cursor-default">Sobre nosotros</h2>
-                    <p class="text-lg sm:text-xl lg:text-justify opacity-80 cursor-default">Nos especializamos en la administración de comunidades y complejos inmobiliarios, ofreciendo un servicio integral y personalizado. Para ello, contamos con una estructura interna multidisciplinar, formada por profesionales en diferentes ámbitos, lo que nos permite ofrecer las soluciones que nuestros clientes esperan.</p>
-                    <p class="text-lg sm:text-xl lg:text-justify opacity-80 cursor-default">Nuestro objetivo es mantener los edificios en las mejores condiciones de seguridad, funcionalidad y habitabilidad. Cada requisito, detalle o circunstancia es atendido siempre con el mejor trato, garantizando que todo funcione de la mejor manera posible, contribuyendo con ello a una mejor calidad de vida de sus usuarios y residentes.</p>
+                    <h2 class="text-3xl sm:text-4xl text-gray-900 dark:text-gray-300 font-semibold">Sobre nosotros</h2>
+                    <p class="text-lg sm:text-xl lg:text-justify opacity-80">Nos especializamos en la administración de comunidades y complejos inmobiliarios, ofreciendo un servicio integral y personalizado. Para ello, contamos con una estructura interna multidisciplinar, formada por profesionales en diferentes ámbitos, lo que nos permite ofrecer las soluciones que nuestros clientes esperan.</p>
+                    <p class="text-lg sm:text-xl lg:text-justify opacity-80">Nuestro objetivo es mantener los edificios en las mejores condiciones de seguridad, funcionalidad y habitabilidad. Cada requisito, detalle o circunstancia es atendido siempre con el mejor trato, garantizando que todo funcione de la mejor manera posible, contribuyendo con ello a una mejor calidad de vida de sus usuarios y residentes.</p>
                     <a href="servicios.html" class="inline-block bg-finur-500 text-white py-3 px-6 rounded-xl text-lg font-semibold hover:bg-finur-600 transition duration-300 hover:scale-105">Saber más</a>
                 </div>
 
@@ -83,7 +83,7 @@
         </div>
     </section>
 
-    <footer class="grid cursor-default">
+    <footer>
         <div class="flex flex-col md:flex-row items-center justify-between py-8 bg-gray-300 dark:bg-gray-800 dark:text-gray-50">
             <!-- CONTACTO -->
             <div class="flex flex-col items-center lg:items-start space-y-6 flex-1 mx-6 md:mx-20 md:w-1/3">
@@ -109,7 +109,7 @@
             </div>
     
             <!-- ENLACE AL DESPACHO -->
-            <div class="flex items-center justify-center flex-1 mt-8 mx-6 md:mx-0 md:my-0">
+            <div class="flex justify-center flex-1 mt-8 mx-6 md:mx-0 md:my-0">
                 <a href="#" class="text-lg font-semibold">ACCESO AL DESPACHO 24 HORAS</a>
             </div>
     
@@ -121,7 +121,7 @@
         </div>
     
         <!-- COPYRIGHT -->
-        <div class="flex items-center justify-center bg-slate-500 p-1">
+        <div class="flex justify-center bg-slate-500 py-1">
             <p class="text-white text-xs">Copyright @ 2024 Finur Canarias. Todos los derechos reservados.</p>
         </div>
     </footer>
