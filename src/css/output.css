@@ -2286,6 +2286,10 @@ html:has(.drawer-toggle:checked) {
   --tw-bg-opacity: 0.2;
 }
 
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2896,6 +2900,10 @@ html:has(.drawer-toggle:checked) {
     border-top-right-radius: 2rem;
   }
 
+  .lg\:bg-opacity-40 {
+    --tw-bg-opacity: 0.4;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2939,6 +2947,18 @@ html:has(.drawer-toggle:checked) {
   .dark\:bg-gray-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-opacity-50 {
+    --tw-bg-opacity: 0.5;
+  }
+
+  .dark\:bg-opacity-40 {
+    --tw-bg-opacity: 0.4;
+  }
+
+  .dark\:bg-opacity-30 {
+    --tw-bg-opacity: 0.3;
   }
 
   .dark\:from-finur-600 {
