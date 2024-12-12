@@ -31,7 +31,7 @@
                 </div>
                 <div class="drawer-side">
                     <label for="nav-responsive" aria-label="close sidebar" class="drawer-overlay"></label>
-                    <ul class="menu bg-base-100 text-base-content min-h-full w-60 p-6 space-y-3">
+                    <ul class="menu bg-base-100 text-base-content min-h-full w-60 p-6 space-y-3  dark:text-white">
                         <label for="nav-responsive" aria-label="close sidebar">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -52,88 +52,90 @@
                 <span class="text-black dark:text-white text-2xl font-semibold">FINURCANARIAS</span>
             </a>
         </div>
-        <nav class="hidden md:flex space-x-9 mr-6 text-xl">
+        <nav class="hidden md:flex space-x-9 mr-6 text-xl dark:text-white">
             <a href="index.html" class="border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Inicio</a>
             <a href="servicios.html" class="border-b-2 border-transparent hover:border-gray-600 transition-all duration-300 ease-in-out">Servicios</a>
             <a href="contacto.html" class="text-finur-400 border-b-2 border-transparent hover:border-finur-600 transition-all duration-300 ease-in-out">Contacto</a>
         </nav>
     </header>
 
-    <section class="text-gray-600 body-font relative flex justify-center cursor-default">
-        <div class="container px-5 pt-24 py-8 mx-auto flex sm:flex-nowrap flex-wrap">
-          <div class="lg:w-3/4 md:w-2/3 bg-white rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-            <div id="loading-logo" class="absolute inset-0 flex justify-center items-center z-10 transition-opacity duration-500 ease-in-out">
-                <img src="imgs/Finur.png" class="w-32 h-32">
+    <div class="dark:bg-gray-700">
+        <section class="text-gray-600 body-font relative flex justify-center cursor-default">
+            <div class="container px-5 pt-24 py-8 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div class="lg:w-3/4 md:w-2/3 bg-white rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <div id="loading-logo" class="absolute inset-0 flex justify-center items-center z-10 transition-opacity duration-500 ease-in-out">
+                    <img src="imgs/Finur.png" class="w-32 h-32">
+                </div>
+                
+                <iframe id="map" width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=FINURCANARIAS%20ADMINISTRACI%C3%93N%20DE%20FINCAS%2C%20Cl.%20del%20Dr.%20Rafael%20Garc%C3%ADa%20Perez%2C%20N%2010%2C%20Local%20B-%202%2C%2035014%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: contrast(1.2) opacity(0.9);"></iframe>
             </div>
-            
-            <iframe id="map" width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=FINURCANARIAS%20ADMINISTRACI%C3%93N%20DE%20FINCAS%2C%20Cl.%20del%20Dr.%20Rafael%20Garc%C3%ADa%20Perez%2C%20N%2010%2C%20Local%20B-%202%2C%2035014%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: contrast(1.2) opacity(0.9);"></iframe>
-        </div>
-            
-        <script>
-            document.getElementById('map').onload = function() {
-              const logo = document.getElementById('loading-logo');
-              const map = document.getElementById('map');
-              
-              logo.style.opacity = '0';
-              
-              setTimeout(() => {
-                logo.style.display = 'none';
-                map.classList.remove('hidden');
-                map.style.opacity = '1';
-              }, 500);
-            };
-        </script>
+                
+            <script>
+                document.getElementById('map').onload = function() {
+                const logo = document.getElementById('loading-logo');
+                const map = document.getElementById('map');
+                
+                logo.style.opacity = '0';
+                
+                setTimeout(() => {
+                    logo.style.display = 'none';
+                    map.classList.remove('hidden');
+                    map.style.opacity = '1';
+                }, 500);
+                };
+            </script>
 
-        <div class="lg:w-1/4 md:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 space-y-6">
-            <h2 class="text-gray-900 text-3xl mb-1 font-medium title-font">Datos de contacto</h2>
-            <div class="flex items-center space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                </svg>  
-                <span><b>Email:</b> finur@finurcanarias.com</span>
-            </div>
-            <div class="flex items-center space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                </svg>
-                <span><b>Teléfono fijo:</b> +34 928 12 96 94</span>
-            </div>
-            <div class="flex items-center space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                </svg>
-                <span><b>WhatsApp:</b> +34 640 92 59 60</span>
-            </div>
-            <div class="grid items-center space-y-2">
+            <div class="lg:w-1/4 md:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 space-y-6 dark:text-white">
+                <h2 class="text-gray-900 dark:text-gray-200 text-3xl mb-1 font-medium title-font">Datos de contacto</h2>
                 <div class="flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
-                    <span><b>Horarios:</b></span>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>  
+                    <span><b>Email:</b> finur@finurcanarias.com</span>
                 </div>
-                <div class="ml-10">
-                    <p><b>Lunes - Jueves</b></p>
-                    <p>09:00 - 16:00</p>
-                    <p><b>Viernes</b></p>
-                    <p>09:00 - 14:00</p>
-                    <p><b>Sábado - Domingo</b></p>
-                    <p>Cerrado</p>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                    </svg>
+                    <span><b>Teléfono fijo:</b> +34 928 12 96 94</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg>
+                    <span><b>WhatsApp:</b> +34 640 92 59 60</span>
+                </div>
+                <div class="grid items-center space-y-2">
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span><b>Horarios:</b></span>
+                    </div>
+                    <div class="ml-10">
+                        <p><b>Lunes - Jueves</b></p>
+                        <p>09:00 - 16:00</p>
+                        <p><b>Viernes</b></p>
+                        <p>09:00 - 14:00</p>
+                        <p><b>Sábado - Domingo</b></p>
+                        <p>Cerrado</p>
+                    </div>
                 </div>
             </div>
+        </section>
+        <div class="grid justify-center">
+            <button class="group flex my-10 rounded-lg shadow-lg items-center space-x-3 p-5 bg-finur-500 hover:bg-finur-600 transition duration-500" onclick="window.open('https://www.google.com/search?q=FINUR+CANARIAS+ADMINISTRACIÓN+DE+FINCAS#lrd=0xXXXXXXXXXXXX:0xXXXXXXXXXXX,3', '_blank')">
+                <svg fill="none" class="size-8 group-hover:rotate-[240deg] transition-transform duration-700" viewBox="0 0 24 24" stroke-width="2" stroke="#ffff" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/> 
+                    <circle cx="12" cy="12" r="9" /> 
+                    <circle cx="12" cy="12" r="3" />  
+                    <line x1="12" y1="9" x2="20.4" y2="9" />  
+                    <line x1="12" y1="9" x2="20.4" y2="9" transform="rotate(120 12 12)" />  
+                    <line x1="12" y1="9" x2="20.4" y2="9" transform="rotate(240 12 12)" />
+                </svg>
+                <span class="text-white font-bold">Escribe una reseña en Google</span>
+            </button>
         </div>
-    </section>
-    <div class="grid justify-center">
-        <button class="group flex my-10 rounded-lg shadow-lg items-center space-x-3 p-5 bg-finur-500 hover:bg-finur-600 transition duration-500" onclick="window.open('https://www.google.com/search?q=FINUR+CANARIAS+ADMINISTRACIÓN+DE+FINCAS#lrd=0xXXXXXXXXXXXX:0xXXXXXXXXXXX,3', '_blank')">
-            <svg fill="none" class="size-8 group-hover:rotate-[240deg] transition-transform duration-700" viewBox="0 0 24 24" stroke-width="2" stroke="#ffff" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z"/> 
-                <circle cx="12" cy="12" r="9" /> 
-                <circle cx="12" cy="12" r="3" />  
-                <line x1="12" y1="9" x2="20.4" y2="9" />  
-                <line x1="12" y1="9" x2="20.4" y2="9" transform="rotate(120 12 12)" />  
-                <line x1="12" y1="9" x2="20.4" y2="9" transform="rotate(240 12 12)" />
-            </svg>
-            <span class="text-white font-bold">Escribe una reseña en Google</span>
-        </button>
     </div>
 
 
