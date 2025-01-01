@@ -2417,6 +2417,10 @@ html:has(.drawer-toggle:checked) {
   padding-bottom: 0.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2453,6 +2457,11 @@ html:has(.drawer-toggle:checked) {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2791,6 +2800,11 @@ html:has(.drawer-toggle:checked) {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2937,8 +2951,17 @@ html:has(.drawer-toggle:checked) {
     padding-bottom: 0px;
   }
 
+  .xl\:pb-1 {
+    padding-bottom: 0.25rem;
+  }
+
   .xl\:text-justify {
     text-align: justify;
+  }
+
+  .xl\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
